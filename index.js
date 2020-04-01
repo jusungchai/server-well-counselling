@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const cookieSession = require('cookie-session');
 const users = require('./routes/users');
+const checklists = require('./routes/checklists');
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -20,6 +21,7 @@ app.get('/api/getList', (req,res) => {
 });
 
 app.use('/users', users);
+app.use('/checklists', checklists);
 
 // Handles any requests that don't match the ones above
 app.get('*', (req,res) =>{
