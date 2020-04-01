@@ -93,13 +93,13 @@ VALUES (11, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myft
 
 
 
-INSERT INTO users(data)
-VALUES ('{
-  emoticon: "https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/10/자존심.png",
-  msgKr: "자존감 하락이에요",
-  msgEn: "It''s a drop in self-esteem",
-  link: "https://docs.google.com/forms/d/e/1FAIpQLSevBhUT61AmmXx8jEvKE4CiG_1R8S1dXh0f8Kh9S2GNixsd7A/viewform?vc=0&c=0&w=1"
-}');
+-- INSERT INTO users(data)
+-- VALUES ('{
+--   "emoticon": "https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/10/자존심.png",
+--   "msgKr": "자존감 하락이에요",
+--   "msgEn": "It''s a drop in self-esteem",
+--   "link": "https://docs.google.com/forms/d/e/1FAIpQLSevBhUT61AmmXx8jEvKE4CiG_1R8S1dXh0f8Kh9S2GNixsd7A/viewform?vc=0&c=0&w=1"
+-- }');
 
 -- INSERT INTO users(data)
 -- VALUES (`{
