@@ -1,5 +1,4 @@
-require('dotenv').config;
-const { db } = require('../config');
+const { pool } = require('../config');
 const express = require('express');
 const router = express.Router();
 
@@ -9,7 +8,7 @@ router.post('/', (req, res) => {
   INSERT INTO homeInformations(data)
   VALUES($1)
   `;  
-  db.query(queryString, values, (error, results) => {
+  pool.query(queryString, values, (error, results) => {
     if (error) {
       throw error
     }
@@ -21,7 +20,7 @@ router.get('/', (req, res) => {
   const queryString = `
   SELECT data FROM homeInformations
   `;  
-  db.query(queryString, (error, results) => {
+  pool.query(queryString, (error, results) => {
     if (error) {
       throw error
     }

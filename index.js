@@ -8,7 +8,7 @@ const users = require('./routes/users');
 const checklists = require('./routes/checklists');
 const homeInformations = require('./routes/homeInformations');
 const server = require("http").Server(app);
-const { db } = require('./config');
+const { pool } = require('./config');
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -29,7 +29,7 @@ app.get('/api/getList', (req, res) => {
     const queryString = `
     SELECT * FROM users
     `;
-    db.query(queryString, (error, results) => {
+    pool.query(queryString, (error, results) => {
         if (error) {
             throw error
         } else {
