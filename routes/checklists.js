@@ -1,4 +1,4 @@
-const { pool } = require('../config');
+const { db } = require('../config');
 const express = require('express');
 const router = express.Router();
 
@@ -8,7 +8,7 @@ router.post('/', (req, res) => {
   INSERT INTO checklists(data)
   VALUES($1)
   `;  
-  pool.query(queryString, values, (error, results) => {
+  db.query(queryString, values, (error, results) => {
     if (error) {
       throw error
     }
@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
   const queryString = `
   SELECT data FROM checklists
   `;  
-  pool.query(queryString, (error, results) => {
+  db.query(queryString, (error, results) => {
     if (error) {
       throw error
     }
