@@ -8,6 +8,7 @@ const users = require('./routes/users');
 const checklists = require('./routes/checklists');
 const homeInformations = require('./routes/homeInformations');
 const server = require("http").Server(app);
+const { db } = require('../config');
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -25,9 +26,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req, res) => {
-    var list = ["item1", "item2", "item3"];
-    res.json(list);
-    console.log('Sent list of items');
+    const queryString = `
+    SELECT * FROM users
+    `;
+    db.query(queryString, (error, results) => {
+        if (error) {
+            throw error
+        } else {
+            res.json(results.rows)
+        }
+    })
+    // var list = ["item1", "item2", "item3"];
+    // res.json(list);
+    // console.log('Sent list of items');
 });
 
 app.use('/users', users);
