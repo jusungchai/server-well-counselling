@@ -7,6 +7,7 @@ const cookieSession = require('cookie-session');
 const users = require('./routes/users');
 const checklists = require('./routes/checklists');
 const homeInformations = require('./routes/homeInformations');
+const server = require("http").Server(app);
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -31,6 +32,6 @@ app.get('*', (req,res) =>{
 });
 
 const port = process.env.PORT || 8001;
-app.listen(port);
+server.listen(port);
 
 console.log('App is listening on port ' + port);
