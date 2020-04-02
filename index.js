@@ -8,7 +8,7 @@ const users = require('./routes/users');
 const checklists = require('./routes/checklists');
 const homeInformations = require('./routes/homeInformations');
 const server = require("http").Server(app);
-const { db } = require('../config');
+const { db } = require('./config');
 
 // Serve the static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
