@@ -9,8 +9,9 @@ router.get('/profiles', (req, res) => {
   db.query(queryString, (error, results) => {
     if (error) {
       throw error
-    }
-    res.json(results.rows)
+    } else {
+      res.json(results.rows)
+    }    
   })
 })
 
