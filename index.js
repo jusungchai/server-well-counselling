@@ -9,6 +9,7 @@ const users = require('./routes/users');
 const checklists = require('./routes/checklists');
 const homeInformations = require('./routes/homeInformations');
 const contact = require('./routes/contact');
+const auth = require('./routes/auth');
 
 
 // Serve the static files from the React app
@@ -25,6 +26,14 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(cookieSession({
+    name: 'session',
+    keys: ["yolo"],
+
+    // Cookie Options
+    maxAge: 24 * 60 * 60 * 1000 // 24 hours
+}))
+
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req, res) => {
     var list = ["item1", "item2", "item3"];
@@ -36,6 +45,7 @@ app.use('/users', users);
 app.use('/checklists', checklists);
 app.use('/homeInformations', homeInformations);
 app.use('/contact', contact);
+app.use('/auth', auth)
 
 // // Handles any requests that don't match the ones above
 // app.get('*', (req, res) => {
