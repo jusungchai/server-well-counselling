@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
@@ -5,17 +6,18 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'btiqa0@gmail.com',
-    pass: 'avrfvkyztrndonsy'
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD
   }
 });
 
 router.post('/', (req, res) => {
+  console.log(req.body)
   const mailOptions = {
-    from: 'btiqa0@gmail.com',
-    to: 'chunsaa@gmail.com',
-    subject: 'Sending Email using Node.js',
-    text: 'That was easy!'
+    to: process.env.ADMIN,
+    subject: `Inquiry from ${req.body.name}: ${req.body.title}`,
+    text: req.body.body,
+    replyTo: req.body.email
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
@@ -23,7 +25,7 @@ router.post('/', (req, res) => {
       throw error;
     }
     console.log(info)
-    res.send("sent")
+    info.accepted[0] ? res.send("sent") : res.send("failed")
   });
 })
 
