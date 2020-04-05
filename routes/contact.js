@@ -1,4 +1,5 @@
 require('dotenv').config()
+const cors = require('cors');
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
@@ -11,7 +12,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-router.post('/', (req, res) => {
+router.post('/', cors(), (req, res) => {
   console.log(req.body)
   const mailOptions = {
     to: process.env.ADMIN,
