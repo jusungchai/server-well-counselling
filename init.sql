@@ -8,7 +8,7 @@ CREATE TABLE users (
   firstName VARCHAR(255) NOT NULL,
   lastName VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL,
-  email VARCHAR(255) NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
   phone VARCHAR(255) NOT NULL
 );
 
@@ -30,37 +30,37 @@ CREATE TABLE homeInformations (
 );
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne1', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne1', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay1@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne2', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne2', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay2@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne3', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne3', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay3@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne4', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne4', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay4@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne5', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne5', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay5@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne6', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne6', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay6@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne7', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne7', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay7@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne8', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne8', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay8@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne9', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne9', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay9@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne10', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne10', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay10@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne11', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay@gmail.com', '4162793971');
+VALUES ('Wayne11', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay11@gmail.com', '4162793971');
 
 
 INSERT INTO profiles(userId, title, avatar)
