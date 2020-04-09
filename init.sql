@@ -77,6 +77,19 @@ VALUES (
   }'
 );
 
+INSERT INTO profiles(userId, data)
+VALUES (
+  3,
+  '{
+    "info": "JS",
+    "jobTitle": "ADMIN",
+    "specialField": "Developer",
+    "certificate": "Everything",
+    "experience": "Javascript",
+    "degree": "Engineering"
+  }'
+);
+
 -- INSERT INTO profiles(userId, title, avatar)
 -- VALUES (2, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
 
