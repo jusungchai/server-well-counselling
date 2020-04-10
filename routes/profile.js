@@ -41,7 +41,7 @@ router.post('/', (req, res) => {
     if (error) {
       throw error
     } else {
-      
+      console.log(req.file)
       if (req.file)
         console.log("ok")
       else
