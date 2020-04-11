@@ -64,19 +64,20 @@ VALUES ('Wayne10', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Ii
 INSERT INTO users(firstName, lastName, password, email, phone)
 VALUES ('Wayne11', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay11@gmail.com', '4162793971');
 
--- INSERT INTO profiles(userId, data)
--- VALUES (
---   1,
---   '{
---     "info": "JS",
---     "jobTitle": "ADMIN",
---     "specialField": "Developer",
---     "certificate": "Everything",
---     "experience": "Javascript",
---     "degree": "Engineering",
---     "blog": "https://google.ca"
---   }'
--- );
+INSERT INTO profiles(userId, data)
+VALUES (
+  1,
+  '{
+    "info": "JS",
+    "jobTitle": "ADMIN",
+    "specialField": "Developer",
+    "certificate": "Everything",
+    "experience": "Javascript",
+    "degree": "Engineering",
+    "blog": "https://google.ca",
+    "avatarURL": "https://vignette.wikia.nocookie.net/hitchhikers/images/7/70/Rubberduck.jpg"
+  }'
+);
 
 -- INSERT INTO profiles(userId, data)
 -- VALUES (
