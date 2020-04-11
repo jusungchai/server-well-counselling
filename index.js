@@ -10,6 +10,7 @@ const checklists = require('./routes/checklists');
 const homeInformations = require('./routes/homeInformations');
 const contact = require('./routes/contact');
 const auth = require('./routes/auth');
+const profile = require('./routes/profile');
 
 
 // Serve the static files from the React app
@@ -34,6 +35,7 @@ app.use(cookieSession({
     maxAge: 24 * 60 * 60 * 1000 // 24 hours
 }))
 
+
 // An api endpoint that returns a short list of items
 app.get('/api/getList', (req, res) => {
     var list = ["item1", "item2", "item3"];
@@ -45,7 +47,9 @@ app.use('/users', users);
 app.use('/checklists', checklists);
 app.use('/homeInformations', homeInformations);
 app.use('/contact', contact);
-app.use('/auth', auth)
+app.use('/auth', auth);
+app.use('/profile', profile);
+
 
 // // Handles any requests that don't match the ones above
 // app.get('*', (req, res) => {
