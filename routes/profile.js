@@ -1,9 +1,24 @@
+require('dotenv').config()
 const { db } = require('../config');
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
 const { Storage } = require('@google-cloud/storage');
 const path = require('path');
+
+const credentials = process.env.type ? {
+  type: process.env.type,
+  project_id: process.env.project_id,
+  private_key_id: process.env.private_key_id,
+  client_email: process.env.client_email,
+  private_key: process.env.private_key.replace(/\\n/g, '\n'),
+  client_id: process.env.client_id,
+  auth_uri: process.env.auth_uri,
+  token_uri: process.env.token_uri,
+  auth_provider_x509_cert_url: process.env.auth_provider_x509_cert_url,
+  client_x509_cert_url: process.env.client_x509_cert_url,
+} : null
+console.log(credentials)
 
 const multerMid = multer({
   storage: multer.memoryStorage(),
@@ -14,7 +29,13 @@ const multerMid = multer({
 
 router.use(multerMid.single('bio'))
 
-const storage = new Storage({
+const storage = credentials ? 
+new Storage({
+  projectId: process.env.projectId,
+  credentials
+})
+: 
+new Storage({
   keyFilename: path.join(__dirname, '../gcp-demo-268618-7d36d1163a07.json'),
   projectId: 'gcp-demo-268618'
 });
