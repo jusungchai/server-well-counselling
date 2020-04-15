@@ -18,7 +18,7 @@ const credentials = process.env.type ? {
   auth_provider_x509_cert_url: process.env.auth_provider_x509_cert_url,
   client_x509_cert_url: process.env.client_x509_cert_url,
 } : null
-console.log(credentials)
+// console.log(credentials)
 
 const multerMid = multer({
   storage: multer.memoryStorage(),
@@ -97,18 +97,18 @@ router.post('/', (req, res) => {
     } else {
       uploadImage(req.file, req.session.userId)
         .then(url => {
-          console.log(results.rows)
-          const avatarURL = url ? url : results.rows[0].data.avatarURL
+          console.log(results.rows.length)
+          const avatarURL = url ? url : results.rows.length ? results.rows[0].data.avatarURL : "https://storage.cloud.google.com/jay-files/profileImage/defaultProfile.png"
           const bio = [...req.body.bio]
           console.log(bio)
           const profileData = {
-            info: bio[0],
-            jobTitle: bio[1],
-            specialField: bio[2],
-            certificate: bio[3],
-            experience: bio[4],
-            degree: bio[5],
-            blog: bio[6],
+            info: bio[1],
+            jobTitle: bio[2],
+            specialField: bio[3],
+            certificate: bio[4],
+            experience: bio[5],
+            degree: bio[6],
+            blog: bio[7],
             avatarURL
           }
 
