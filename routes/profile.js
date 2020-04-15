@@ -56,7 +56,7 @@ const uploadImage = (file, userId) => new Promise((resolve, reject) => {
     resumable: false
   })
   blobStream.on('finish', () => {
-    const publicUrl = `https://storage.cloud.google.com/${bucket.name}/${blob.name}`
+    const publicUrl = `https://storage.googleapis.com/${bucket.name}/${blob.name}`
 
     resolve(publicUrl)
   })
@@ -98,7 +98,8 @@ router.post('/', (req, res) => {
       uploadImage(req.file, req.session.userId)
         .then(url => {
           console.log(results.rows.length)
-          const avatarURL = url ? url : results.rows.length ? results.rows[0].data.avatarURL : "https://storage.cloud.google.com/jay-files/profileImage/defaultProfile.png"
+          console.log(url)
+          const avatarURL = url ? url : results.rows.length ? results.rows[0].data.avatarURL : "https://storage.googleapis.com/jay-files/profileImage/defaultProfile.png"
           const bio = [...req.body.bio]
           console.log(bio)
           const profileData = results.rows.length ? 
