@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
 })
 
 router.post('/login', (req, res) => {
-  const values = [req.body.email];
+  const values = [req.body.email.toLowerCase()];
   const queryString = `
   SELECT * FROM users
   WHERE email = $1
@@ -53,7 +53,7 @@ router.post('/register', (req, res) => {
       }
       else bcrypt.hash(req.body.password, 10)
         .then(hash => {
-          const values = [req.body.firstName, req.body.lastName, hash, req.body.email, req.body.phone];
+          const values = [req.body.firstName.toUpperCase(), req.body.lastName.toUpperCase(), hash, req.body.email.toLowerCase(), req.body.phone];
           const queryString = `
         INSERT INTO users(firstName, lastName, password, email, phone)
         VALUES ($1, $2, $3, $4, $5)

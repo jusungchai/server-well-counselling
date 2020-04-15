@@ -32,37 +32,37 @@ CREATE TABLE homeInformations (
 );
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne1', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay1@gmail.com', '4162793971');
+VALUES ('WAYNE1', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay1@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne2', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay2@gmail.com', '4162793971');
+VALUES ('WAYNE2', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay2@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne3', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay3@gmail.com', '4162793971');
+VALUES ('WAYNE3', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay3@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne4', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay4@gmail.com', '4162793971');
+VALUES ('WAYNE4', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay4@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne5', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay5@gmail.com', '4162793971');
+VALUES ('WAYNE5', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay5@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne6', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay6@gmail.com', '4162793971');
+VALUES ('WAYNE6', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay6@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne7', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay7@gmail.com', '4162793971');
+VALUES ('WAYNE7', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay7@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne8', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay8@gmail.com', '4162793971');
+VALUES ('WAYNE8', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay8@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne9', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay9@gmail.com', '4162793971');
+VALUES ('WAYNE9', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay9@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne10', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay10@gmail.com', '4162793971');
+VALUES ('WAYNE10', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay10@gmail.com', '4162793971');
 
 INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('Wayne11', 'Chai', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay11@gmail.com', '4162793971');
+VALUES ('WAYNE11', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay11@gmail.com', '4162793971');
 
 INSERT INTO profiles(userId, data)
 VALUES (
@@ -94,34 +94,34 @@ VALUES (
 -- );
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (2, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (2, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (3, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (3, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (4, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (4, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (5, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (5, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (6, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (6, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (7, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (7, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (8, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (8, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (9, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (9, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (10, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (10, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 -- INSERT INTO profiles(userId, title, avatar)
--- VALUES (11, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-Chai.jpeg');
+-- VALUES (11, 'DOCTORAL', 'https://secureservercdn.net/198.71.233.204/5xi.ab1.myftpupload.com/wp-content/uploads/2018/08/WanSoo-CHAI.jpeg');
 
 
 
