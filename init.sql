@@ -9,7 +9,8 @@ CREATE TABLE users (
   lastName VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL,
   email VARCHAR(255) UNIQUE NOT NULL,
-  phone VARCHAR(255) NOT NULL
+  phone VARCHAR(255) NOT NULL,
+  admin BOOLEAN DEFAULT FALSE
 );
 
 CREATE TABLE profiles (
@@ -31,8 +32,8 @@ CREATE TABLE homeInformations (
   data JSON NOT NULL
 );
 
-INSERT INTO users(firstName, lastName, password, email, phone)
-VALUES ('WAYNE1', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay1@gmail.com', '4162793971');
+INSERT INTO users(firstName, lastName, password, email, phone, admin)
+VALUES ('WAYNE1', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay1@gmail.com', '4162793971', true);
 
 INSERT INTO users(firstName, lastName, password, email, phone)
 VALUES ('WAYNE2', 'CHAI', '$2b$10$AlzIaZxqfB3ttQZ8xqB.y.m0ZDJqkEOlaO1reCsW4p1Iinr1z4qNa', 'jay2@gmail.com', '4162793971');

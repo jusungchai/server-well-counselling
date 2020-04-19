@@ -6,7 +6,16 @@ const bcrypt = require('bcrypt');
 
 router.get('/', (req, res) => {
   if (req.session.userId) {
-    res.json("in")
+    const queryString = `
+    SELECT * FROM users
+    WHERE id = ${req.session.userId}
+    `;
+    db.query(queryString, (error, results) => {
+      if (error){
+        throw error
+      }
+      results.rows[0].admin ? res.json("admin") : res.json("user")
+    })
   } else {
     res.json("out")
   }
@@ -25,10 +34,10 @@ router.post('/login', (req, res) => {
     if (results.rows.length) {
       bcrypt.compare(req.body.password, results.rows[0].password)
         .then(result => {
-          console.log(result)
+          console.log(results.rows[0])
           if (result) {
             req.session.userId = results.rows[0].id
-            res.json("logged in")
+            results.rows[0].admin ? res.json("admin") : res.json("user")
           }
           else res.json("wrong pw")
         })
